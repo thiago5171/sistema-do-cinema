@@ -6,17 +6,19 @@ import(
 
 type Movie struct{
 	Name  		string
-	Session 	*Session
+	Sessao 	*Sessao
 }
 
 func (x Movie)  SeeMovie(){
-	fmt.Print("Filme->",x.Name)
-	if(Room_l=="1"){
-		fmt.Print("sessão legendada")
-	}
-	if(Room_d=="1"){
-		fmt.Print("sessão dublada")
-	}
+	fmt.Println("Filme->",x.Name)  {
+		if(Room_l == "1"){
+			fmt.Println("sessão legendada")
+		}
+		if(Room_d =="1"){
+			fmt.Println("sessão dublada")
+		}
 
+	}
+	
 }
 
