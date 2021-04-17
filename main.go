@@ -17,7 +17,7 @@ func main() {
 
 
 	customer = append(customer,Movie{
-		Name: " jogos mortais",Sessao:	&Sessao{
+		Name: " jogos mortais",Sessao: &Sessao{
 			Room_l: "0",
 			Room_d: "1",
 		},
