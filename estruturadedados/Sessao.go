@@ -2,7 +2,7 @@ package cineProject
 
 	//"strconv" biblioteca para converter string para inteiro
 
-type Sessao struct{
+type &Sessao struct{
 	Room_l	string// sala legendada
 	Room_d	string//sala dublada
 }

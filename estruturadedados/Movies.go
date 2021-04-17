@@ -6,7 +6,7 @@ import(
 
 type Movie struct{
 	Name  		string
-	Sessao 	*Sessao
+	Sessao 	    *Sessao
 }
 
 func (x Movie)  SeeMovie(){
