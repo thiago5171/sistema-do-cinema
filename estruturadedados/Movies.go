@@ -12,14 +12,24 @@ type Movie struct{
 func (x Movie)  SeeMovie(){
 	fmt.Println("Filme->", x.Name);
 
-	if(x.Sessao.Room_l == "1"){
+	if(x.Sessao.RoomL == "1"){
 		fmt.Println("sessão legendada");
+
 	}
-	if(x.Sessao.Room_d =="1"){
+	if(x.Sessao.RoomD =="1"){
 		fmt.Println("sessão dublada");
 	}
-}
 
-func NewMovie(Name string ,Room_d, Room_l Sessao) *Movie{
-	return &Movie{Name,Sessao{Room_d, Room_l}}
+	if (x.Sessao.tarde=="1"){
+		fmt.Println("Horario de inicio: 16:00");
+		
+	}
+	if (x.Sessao.noite=="1"){
+		fmt.Println("Horario de inicio: 20:00");
+		
+	}
 }
+/*
+func NewMovie(Name string ,RoomD, RoomL string) *Movie{
+	return &Movie{Name,&Sessao{RoomD, RoomL}}
+}*/
