@@ -5,7 +5,7 @@ package estruturadedados
 type Sessao struct{
 	RoomL	string// sala legendada
 	RoomD	string//sala dublad
-	tarde	string
-	noite	string
+	Tarde	string
+	Noite	string
 }
 
