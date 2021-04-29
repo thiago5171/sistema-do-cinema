@@ -12,48 +12,49 @@ func main() {
 		Name: "Harry Potter", Sessao: &estruturas.Sessao{
 			RoomL: "1",// 1 siginifica  que a sala foi selecionada
 			RoomD: "0",// 0 significa que a sala nao foi selecionada
-			tarde: "0",
-			noite: "1",
+			Tarde: "1",
+			Noite: "0",
 		},
 	})
 	customer = append(customer, estruturas.Movie{
 		Name: "Harry Potter", Sessao: &estruturas.Sessao{
 			RoomL: "0",
-			RoomD: "1",
-			tarde: "1",
-			noite: "0",
-		},
-	})
-
-
-	customer = append(customer, estruturas.Movie{
-		Name: " jogos mortais", Sessao: &estruturas.Sessao{
-			RoomL: "0",
 			RoomD: "1",// 1 siginifica  que a sala foi selecionada
-			tarde: "0",
-			noite: "1",
+			Tarde: "0",
+			Noite: "1",
 		},
 	})
-	
+
 
 	customer = append(customer, estruturas.Movie{
 		Name: " jogos mortais", Sessao: &estruturas.Sessao{
 			RoomL: "1",
 			RoomD: "0",
-			tarde: "1",
-			noite: "0",
+			Tarde: "1",
+			Noite: "0",
 		},
 	})
 
 	
-	customer[0].SeeMovie()
-	fmt.Println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=--=-")
-	customer[1].SeeMovie()
-	//customer[2]=append(customer,*estruturas.NewMovie("anjos da lei","1","0"))
+	customer = append(customer, estruturas.Movie{
+		Name: " jogos mortais", Sessao: &estruturas.Sessao{
+			RoomL: "0",
+			RoomD: "1",
+			Tarde: "0",
+			Noite: "1",
+		},
+	})
+	
 
 	
+	//customer[2]=append(customer,*estruturas.NewMovie("anjos da lei","1","0"))
+
+	fmt.Println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=--=-")
+
 	for i:=0;i<=3;i++ {
-		fmt.Println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=--=-")
+		
 		customer[i].SeeMovie()	
+		fmt.Println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=--=-")
+
 	}
 }
